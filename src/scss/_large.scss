@@ -97,6 +97,21 @@
 			}
 		}
 	}
+
+        //HEROIMG
+
+.hero {
+	&__img {
+		background-image: url('../../dist/img/adventure-big.jpg');
+        height: 300px;
+		&-text {
+			p {
+				padding: 1.0em 3.5em;
+				font-size: 4rem;
+			}
+		}
+	}
+}
 }
 
 @media (min-width: 1200px) {

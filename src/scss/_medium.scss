@@ -1,6 +1,5 @@
 @media (min-width: 768px) {
-	
-    //HEADER
+	//HEADER
 
 	.header {
 		&__img {
@@ -8,6 +7,21 @@
 				font-size: 2.9rem;
 				&--bolder {
 					font-size: 3.1rem;
+				}
+			}
+		}
+	}
+
+	//HEROIMG
+
+	.hero {
+		&__img {
+			background-image: url('../../dist/img/adventure-big.jpg');
+			height: 250px;
+			&-text {
+				p {
+					padding: 1em 3em;
+					font-size: 3rem;
 				}
 			}
 		}
