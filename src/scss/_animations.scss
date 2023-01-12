@@ -1,0 +1,29 @@
+@keyframes sideLinksAnimation {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+		background-color: $black;
+	}
+}
+
+@keyframes mainLinksAnimationIN {
+	from {
+		height: 0%;
+	}
+	to {
+		height: 100%;
+		background-color: $black;
+	}
+}
+
+@keyframes mainLinksAnimationOUT {
+	from {
+		height: 100%;
+		background-color: $black;
+	}
+	to {
+		height: 0%;
+	}
+}

@@ -1,0 +1,62 @@
+@media (min-width: 992px) {
+	.brand {
+		font-size: 4.5rem;
+		&__title {
+			font-size: 5rem;
+		}
+	}
+	.hamburger {
+		display: none;
+	}
+	nav {
+		padding: 0;
+		height: 80px;
+		.desktop-nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			.nav__main {
+				display: block;
+				height: 100%;
+
+				&-link {
+					position: relative;
+					display: inline-flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					padding: 1.3em;
+					font-size: 2.5rem;
+					height: 100%;
+					text-decoration: none;
+					color: $black;
+					transition: color 0.5s;
+				}
+				&-link::before {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					content: '';
+					z-index: -5;
+                    animation: mainLinksAnimationOUT 0.5s forwards;
+				}
+
+				&-link:hover::before {
+					animation: mainLinksAnimationIN 0.5s forwards;
+				}
+
+				&-link:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+}

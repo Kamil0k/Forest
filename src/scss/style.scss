@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animations';
 
 *,
 *::before,
@@ -26,6 +27,21 @@ html {
 	width: 100%;
 }
 
+.brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5rem;
+	color: $darker;
+
+	&__title {
+		font-size: 4rem;
+		margin-left: 0.2em;
+		font-weight: 500;
+	}
+}
+//NAVIGATION
+
 .hamburger {
 	&__button {
 		position: fixed;
@@ -36,12 +52,15 @@ html {
 		font-weight: bold;
 		color: $darker;
 		background: transparent;
-		border: 2px solid $darker;
+		border: none;
 		cursor: pointer;
 		z-index: 1000;
+
+		&:focus {
+			border: 2px solid $darker;
+		}
 	}
 }
-
 
 nav {
 	position: fixed;
@@ -54,78 +73,65 @@ nav {
 	padding: 1em 1.5em;
 	background-color: #fff;
 
-	.brand {
+	.nav__main {
+		display: none;
+	}
+
+	.nav__side {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		font-size: 3.5rem;
-		color: $darker;
+		height: 100vh;
+		width: 100%;
+		background-color: $white;
+		transform: translateX(100%);
+		transition: transform 0.5s;
+		z-index: 100;
 
-		&__title {
-			font-size: 4rem;
-			margin-left: 0.2em;
-			font-weight: 500;
+		&--active {
+			transform: translateX(0%);
+		}
+
+		&-link {
+			position: relative;
+			width: 100%;
+			margin: 0.5em;
+			padding: 0.5em;
+			text-decoration: none;
+			text-align: center;
+			font-size: 3.5rem;
+			color: $darker;
+			cursor: pointer;
+			transition: color 0.2s;
+			z-index: 5;
+		}
+
+		&-link::before {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			content: '';
+			z-index: -5;
+		}
+
+		&-link:hover::before {
+			animation: sideLinksAnimation 0.2s forwards;
+		}
+
+		&-link:hover {
+			color: $white;
 		}
 	}
 }
 
-.side-nav {
-	position: fixed;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	background-color: $light-white;
-	transform: translateX(102%);
-	transition: transform 0.5s;
-	z-index: 100;
-
-	.side-nav__link {
-		position: relative;
-		width: 100%;
-		margin: 0.5em;
-		padding: 0.5em;
-		text-decoration: none;
-		text-align: center;
-		font-size: 3.5rem;
-		color: $darker;
-		cursor: pointer;
-		transition: color 0.2s;
-		z-index: 5;
-	}
-
-	.side-nav__link::before {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		content: '';
-		z-index: -5;
-	}
-
-	.side-nav__link:hover::before {
-		animation: beforeLinkAnimation 0.2s forwards;
-	}
-
-	.side-nav__link:hover {
-		color: $white;
-	}
-
-	&--active {
-		transform: translateX(0);
-	}
-}
-
-@keyframes beforeLinkAnimation {
-	from {
-		width: 0%;
-	}
-	to {
-		width: 100%;
-		background-color: $black;
-	}
-}
+@import 'small';
+@import 'medium';
+@import 'large';
