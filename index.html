@@ -21,20 +21,22 @@
 
 <nav>
     <div class="desktop-nav">
-        <div class="brand">
+
+        <a href="#" class="brand">
             <div class="brand__icon"><i class="fa-solid fa-tree"></i></div>
             <div class="brand__title">Forest</div>
-        </div>
+        </a>
+
         <div class="nav__main">
             <a class="nav__main-link" href="#">Home</a>
-            <a class="nav__main-link" href="#">O nas</a>
+            <a class="nav__main-link" href="#aboutus">O nas</a>
             <a class="nav__main-link" href="#">Oferta</a>
             <a class="nav__main-link" href="#">Kontakt</a>
         </div>
     </div>
     <div class="nav__side">
         <a class="nav__side-link" href="#">Home</a>
-        <a class="nav__side-link" href="#">O nas</a>
+        <a class="nav__side-link" href="#aboutus">O nas</a>
         <a class="nav__side-link" href="#">Oferta</a>
         <a class="nav__side-link" href="#">Kontakt</a>
     </div>
@@ -42,10 +44,29 @@
 
     <header class="header">
         <div class="header__img">
-            <h1 class="header__img-text">Forest Group<br><span class="header__img-text--bolder">Najpiększniejszy park w twojej okolicy!</span></h1>
+            <h1 class="header__img-text">Forest Group<br><span class="header__img-text--bolder">Najpiększniejszy park w
+                    twojej okolicy!</span></h1>
             <div class="shadow-bg"></div>
         </div>
     </header>
+
+    <div class="wrapper">
+        <section class="aboutus" id="aboutus">
+            <div class="aboutus__title">
+                <h2 class="section-title">o nas</h2>
+            </div>
+            <div class="aboutus__box">
+                <img src="../dist/img/river-small.jpg"
+                    alt="Na środku jeziora mała wysepka, na którym rośnie drzewo. W tle zielony las."
+                    class="aboutus__box-img">
+                <div class="aboutus__box-text">
+                    <h3>Niezapomniane przygody</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quos natus, in quaerat architecto suscipit deleniti perferendis pariatur, assumenda quia qui quis ea? Dolore, quos voluptates omnis exercitationem corrupti cum laborum repellat modi atque adipisci labore molestiae sapiente tempora! Commodi, aperiam. Praesentium, voluptates, corporis impedit illo, architecto ut facilis commodi dignissimos soluta at quaerat magni eveniet doloribus ipsum provident suscipit. Temporibus, nihil quibusdam? Laudantium minus velit autem praesentium? Voluptatum, quibusdam.</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
 
     <script src="./dist/js/script.min.js"></script>
 </body>
