@@ -43,7 +43,7 @@
 					right: 0;
 					content: '';
 					z-index: -5;
-                    animation: mainLinksAnimationOUT 0.5s forwards;
+					animation: mainLinksAnimationOUT 0.5s forwards;
 				}
 
 				&-link:hover::before {
@@ -54,6 +54,12 @@
 					color: $white;
 				}
 			}
+		}
+	}
+
+	.header {
+		&__img {
+			background-image: url(../../dist/img/header-big.jpg);
 		}
 	}
 }

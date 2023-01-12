@@ -1,3 +1,13 @@
 @media(min-width: 576px) {
+    .header{
+        &__img{
+            &-text {
+                font-size: 2.5rem;
+                &--bolder {
+                    font-size: 2.7rem;
+                }
+            }
+        }
+    }
     
 }

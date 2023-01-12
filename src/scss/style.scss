@@ -40,6 +40,16 @@ html {
 		font-weight: 500;
 	}
 }
+
+.shadow-bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+}
+
 //NAVIGATION
 
 .hamburger {
@@ -128,6 +138,34 @@ nav {
 
 		&-link:hover {
 			color: $white;
+		}
+	}
+}
+
+.header {
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-image: url('../../dist/img/header-small.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: -20;
+
+		&-text {
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			font-size: 2.3rem;
+			font-weight: 300;
+			color: $white;
+			z-index: 20;
+
+			&--bolder {
+				font-weight: bold;
+				font-size: 2.5rem;
+			}
 		}
 	}
 }
