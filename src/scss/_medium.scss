@@ -26,6 +26,42 @@
 			}
 		}
 	}
+
+	//FOOTER
+
+	.footer {
+		&__top {
+			flex-direction: row;
+			justify-content: space-around;
+			padding: 3em 0;
+
+			.brand {
+				margin-bottom: 1em;
+			}
+
+			&-links {
+				flex-direction: row;
+				width: auto;
+			}
+
+			&-link {
+				margin: 0 1em;
+				h4 {
+					font-size: 2rem;
+				}
+				a {
+					font-size: 1.7rem;
+				}
+			}
+		}
+
+		&__bottom {
+			&-text {
+				padding: 1.5em 0;
+				font-size: 1.8rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 870px) {
