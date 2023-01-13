@@ -27,3 +27,28 @@
 		}
 	}
 }
+
+@media (min-width: 870px) {
+	//OFFERS
+
+	.offers {
+		&__title {
+			&-describe {
+				font-size: 2.3rem;
+			}
+		}
+
+		&__box {
+			margin-top: 0em;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&--main {
+				order: 0;
+				margin-top: 0em;
+			}
+		}
+	}
+}
