@@ -29,4 +29,21 @@
 			}
 		}
 	}
+
+	//OFFERS PAGE
+
+	//PARKS IN NUMBER
+
+	.data {
+		&__card {
+			margin: 0.4em 0.4em;
+
+			&-icon {
+				font-size: 4.4rem;
+			}
+			&-number {
+				font-size: 2.7rem;
+			}
+		}
+	}
 }

@@ -17,8 +17,9 @@ body {
 }
 
 html {
-	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 78px;
+	font-size: 62.5%;
 }
 
 .wrapper {
@@ -156,11 +157,14 @@ nav {
 		position: relative;
 		width: 100%;
 		height: 400px;
-		background-image: url('../../dist/img/header-small.jpg');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		z-index: -20;
+
+		&--home {
+			background-image: url('../../dist/img/header-home-small.jpg');
+		}
 
 		&-text {
 			position: absolute;
@@ -262,6 +266,19 @@ nav {
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
+
+		&-link {
+			display: block;
+			margin-top: 1.5em;
+			font-size: 1.7rem;
+			text-align: center;
+
+			a {
+				font-weight: bold;
+				text-decoration: none;
+				color: $black;
+			}
+		}
 	}
 
 	&__box {
@@ -329,7 +346,7 @@ nav {
 //FOOTER
 
 footer {
-	margin-top: 5em;
+	margin-top: 3em;
 	background-color: $light-white;
 }
 
@@ -376,6 +393,70 @@ footer {
 		&-text {
 			padding: 1em 0;
 			text-align: center;
+		}
+	}
+}
+
+//OFFERS PAGE
+
+//HEADER
+
+.header {
+	&__img {
+		&--offers {
+			background-image: url('../../dist/img/header-offers-small.jpg');
+		}
+	}
+}
+
+//PARKS IN NUMBER
+
+.data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		padding: 3em;
+		h2{
+			text-align: center;
+			font-weight: normal;
+			font-size: 3.4rem;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	&__card {
+		width: 287px;
+		margin: 0.4em;
+		padding: 2em;
+		border: 1px solid $black;
+		box-shadow: inset 0px 0px 10px 0px rgba(66, 68, 90, 1);
+		border-radius: 10px;
+
+		&:nth-child(even) {
+			background-color: $darker;
+			color: $white;
+			box-shadow: inset 0px 0px 10px 0px rgba(189, 188, 165, 1);
+		}
+
+		&-icon {
+			font-weight: bold;
+			font-size: 4rem;
+			color: $main-color;
+		}
+		&-number {
+			padding: 0.5em 0;
+			font-weight: bold;
+			font-size: 2.5rem;
 		}
 	}
 }

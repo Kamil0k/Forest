@@ -9,7 +9,7 @@
 		display: none;
 	}
 
-    //NAVIGATION
+	//NAVIGATION
 
 	nav {
 		padding: 0;
@@ -60,17 +60,19 @@
 		}
 	}
 
-    //HEADER
+	//HEADER
 
 	.header {
 		&__img {
-			background-image: url(../../dist/img/header-big.jpg);
+			&--home {
+				background-image: url('../../dist/img/header-home-big.jpg');
+			}
 		}
 	}
 
-    //ABOUTUS
+	//ABOUTUS
 
-    //ABOUTUS
+	//ABOUTUS
 
 	.aboutus {
 		&__box {
@@ -84,7 +86,7 @@
 				object-fit: cover;
 			}
 			&-text {
-                width: 48%;
+				width: 48%;
 				margin-bottom: 1.5em;
 				h3 {
 					margin-bottom: 0.5em;
@@ -92,27 +94,36 @@
 				}
 				p {
 					font-size: 1.6rem;
-                    line-height: 30px
+					line-height: 30px;
 				}
 			}
 		}
 	}
 
-        //HEROIMG
+	//HEROIMG
 
-.hero {
-	&__img {
-		background-image: url('../../dist/img/adventure-big.jpg');
-        height: 300px;
-		&-text {
-			p {
-				padding: 1.0em 3.5em;
-				font-size: 4rem;
+	.hero {
+		&__img {
+			background-image: url('../../dist/img/adventure-big.jpg');
+			height: 300px;
+			&-text {
+				p {
+					padding: 1em 3.5em;
+					font-size: 4rem;
+				}
 			}
 		}
 	}
 }
-}
 
-@media (min-width: 1200px) {
+//OFFERS PAGE
+
+//HEADER
+
+.header {
+	&__img {
+		&--offers{
+			background-image: url('../../dist/img/header-offers-big.jpg');
+		}
+	}
 }
