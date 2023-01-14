@@ -418,7 +418,7 @@ footer {
 	align-items: center;
 	&__title {
 		padding: 3em;
-		h2{
+		h2 {
 			text-align: center;
 			font-weight: normal;
 			font-size: 3.4rem;
@@ -438,7 +438,6 @@ footer {
 		width: 287px;
 		margin: 0.4em;
 		padding: 2em;
-		border: 1px solid $black;
 		box-shadow: inset 0px 0px 10px 0px rgba(66, 68, 90, 1);
 		border-radius: 10px;
 
@@ -458,6 +457,73 @@ footer {
 			font-weight: bold;
 			font-size: 2.5rem;
 		}
+	}
+}
+
+//PARKS
+
+.parks {
+	&__title {
+		padding: 3em;
+		h2 {
+			text-align: center;
+			font-weight: normal;
+			font-size: 3.4rem;
+		}
+	}
+
+	&__card {
+		position: relative;
+		padding: 1em;
+		margin: 1em 3em;
+		background-color: $white;
+		border: 3px solid $black;
+		z-index: 10;
+
+		&-title {
+			margin-bottom: 0.5em;
+			font-size: 2.8rem;
+		}
+
+
+
+		&-link {
+			display: block;
+			margin-top: 1.5em;
+			text-decoration: none;
+			color: $darker;
+		}
+
+		&-addres-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+
+			&-icon {
+				padding-right: 0.3em;
+				font-size: 2rem;
+				color: $darker;
+			}
+
+			&-addres {
+				font-size: 1.9rem;
+				font-weight: bold;
+				color: $black;
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+		padding: 0 1em;
+		transform: translateY(-3em);
+		transition: transform 0.3s;
+		
+
+		// &:hover {
+		// 	transform: scale(1.1);
+		// }
 	}
 }
 
