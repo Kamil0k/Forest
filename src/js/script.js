@@ -13,6 +13,15 @@ const handleMobileNav = () => {
 	})
 }
 
+const handleSideItemsAnimation = () => {
+	let delayTime = 0
+	sideNavLinks.forEach(link => {
+		link.classList.toggle('nav-side-animation')
+		link.style.animationDelay = '.' + delayTime + 's'
+		delayTime++
+	})
+}
+
 const handleYear = () => {
 	const d = new Date()
 	year.innerText = d.getFullYear()
@@ -20,3 +29,4 @@ const handleYear = () => {
 
 handleYear()
 hamburgerButton.addEventListener('click', handleMobileNav)
+hamburgerButton.addEventListener('click', handleSideItemsAnimation)

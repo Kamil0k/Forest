@@ -27,3 +27,12 @@
 		height: 0%;
 	}
 }
+
+@keyframes navSideAnimation {
+	from {
+		transform: translateY(400%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}

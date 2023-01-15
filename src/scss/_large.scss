@@ -130,51 +130,8 @@
 	//PARKS IN NUMBER
 
 	.data {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		&__title {
 			padding: 3em;
-			h2 {
-				text-align: center;
-				font-weight: normal;
-				font-size: 3.4rem;
-			}
-		}
-
-		&__cards {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			text-align: center;
-		}
-
-		&__card {
-			width: 287px;
-			margin: 0.4em;
-			padding: 2em;
-			box-shadow: inset 0px 0px 10px 0px rgba(66, 68, 90, 1);
-			border-radius: 10px;
-
-			&:nth-child(even) {
-				background-color: $darker;
-				color: $white;
-				box-shadow: inset 0px 0px 10px 0px rgba(189, 188, 165, 1);
-			}
-
-			&-icon {
-				font-weight: bold;
-				font-size: 4rem;
-				color: $main-color;
-			}
-			&-number {
-				padding: 0.5em 0;
-				font-weight: bold;
-				font-size: 2.5rem;
-			}
 		}
 	}
 
@@ -260,6 +217,25 @@
 			&--contact {
 				background-image: url('../../dist/img/header-contact-big.jpg');
 				background-position: 0 15%;
+			}
+		}
+	}
+
+	//FORM
+
+	.sheet {
+		&__boxes {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__box {
+			width: 48%;
+
+			&--first {
+				margin-bottom: 0em;
 			}
 		}
 	}

@@ -22,22 +22,22 @@
 <nav>
     <div class="desktop-nav">
 
-        <a href="#" class="brand">
+        <a href="../index.html" class="brand">
             <div class="brand__icon"><i class="fa-solid fa-tree"></i></div>
             <div class="brand__title">Forest</div>
         </a>
 
         <div class="nav__main">
-            <a class="nav__main-link" href="#">Home</a>
-            <a class="nav__main-link" href="#aboutus">O nas</a>
-            <a class="nav__main-link" href="#offers">Oferta</a>
+            <a class="nav__main-link" href="../index.html">Home</a>
+            <a class="nav__main-link" href="../index.html#aboutus">O nas</a>
+            <a class="nav__main-link" href="../index.html#offers">Oferta</a>
             <a class="nav__main-link" href="../contact.html">Kontakt</a>
         </div>
     </div>
     <div class="nav__side">
-        <a class="nav__side-link" href="#">Home</a>
-        <a class="nav__side-link" href="#aboutus">O nas</a>
-        <a class="nav__side-link" href="#offers">Oferta</a>
+        <a class="nav__side-link" href="../index.html">Home</a>
+        <a class="nav__side-link" href="../index.html#aboutus">O nas</a>
+        <a class="nav__side-link" href="../index.html#offers">Oferta</a>
         <a class="nav__side-link" href="../contact.html">Kontakt</a>
     </div>
 </nav>
@@ -57,7 +57,8 @@
                 <div class="contact__boxes">
                     <div class="contact__box">
                         <i class="fa-solid fa-map-location-dot contact__box-icon"></i>
-                        <p class="contact__box-link"><a href="#">Zobacz na mapie</a></p>
+                        <p class="contact__box-link"><a href="#map">Zobacz na mapie <i
+                                    class="fa-solid fa-angles-down"></i></a></p>
                         <p class="contact__box-title">Lokalizacja</p>
                         <div class="contact__box-info">31-358 Kraków<br>ul. Jasnogórska 2</div>
                     </div>
@@ -75,42 +76,69 @@
             </section>
         </div>
 
+        <div class="wrapper">
+            <section class="sheet">
+                <div class="sheet__title">
+                    <h2 class="section-title">Napisz do nas!</h2>
+                </div>
+                <div class="sheet__boxes">
+                    <div class="sheet__box sheet__box--first">
+                        <form class="sheet__box-form">
+                            <h3 class="sheet__box-form-title">Formularz kontaktowy</h3>
+                            <label for="sheet__box-form-name">Imię i nazwisko:</label>
+                            <input type="text" class="sheet__box-form-name">
+                            <label for="sheet__box-form-email">Adres email:</label>
+                            <input type="text" class="sheet__box-form-email">
+                            <label for="sheet__box-form-message">Treść wiadomości:</label>
+                            <textarea name="sheet__box-form-message" rows="5"></textarea>
+                            <button class="sheet__box-form-btn">Wyślij</button>
+                        </form>
+                    </div>
+                    <div class="sheet__box" id="map">
+                        <h3 class="sheet__box-map-title">Mapa dojazdu</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8978424941183!2d19.892849199999997!3d50.088199499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a2d7f0d587f%3A0x15f4e7c36adff6d2!2sJasnog%C3%B3rska%202%2C%2031-358%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1673813286359!5m2!1spl!2spl"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
-        <div class="wrapper footer">
-            <div class="footer__top">
-                <a href="#" class="brand">
-                    <div class="brand__icon"><i class="fa-solid fa-tree"></i></div>
-                    <div class="brand__title">Forest</div>
-                </a>
-                <div class="footer__top-links">
-                    <div class="footer__top-link">
-                        <h4>O nas</h4>
-                        <a href="#">Historia</a>
-                        <a href="#">Parki</a>
-                        <a href="#">Opinie</a>
-                    </div>
-                    <div class="footer__top-link">
-                        <h4>Nasza firma</h4>
-                        <a href="#">Praca</a>
-                        <a href="#">Kadry</a>
-                        <a href="#">Zarząd</a>
-                    </div>
-                    <div class="footer__top-link">
-                        <h4>Dokumenty</h4>
-                        <a href="#">Wnioski</a>
-                        <a href="#">Rezerwacje</a>
-                        <a href="#">Ankiety</a>
-                    </div>
+    <div class="wrapper footer">
+        <div class="footer__top">
+            <a href="../index.html" class="brand">
+                <div class="brand__icon"><i class="fa-solid fa-tree"></i></div>
+                <div class="brand__title">Forest</div>
+            </a>
+            <div class="footer__top-links">
+                <div class="footer__top-link">
+                    <h4>O nas</h4>
+                    <a href="#">Historia</a>
+                    <a href="#">Parki</a>
+                    <a href="#">Opinie</a>
+                </div>
+                <div class="footer__top-link">
+                    <h4>Nasza firma</h4>
+                    <a href="#">Praca</a>
+                    <a href="#">Kadry</a>
+                    <a href="#">Zarząd</a>
+                </div>
+                <div class="footer__top-link">
+                    <h4>Dokumenty</h4>
+                    <a href="#">Wnioski</a>
+                    <a href="#">Rezerwacje</a>
+                    <a href="#">Ankiety</a>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <p class="footer__bottom-text">&copy;<span class="year"></span> Forest Group Company Ltd.</p>
-        </div>
-    </footer>
-
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__bottom-text">&copy;<span class="year"></span> Forest Group Company Ltd.</p>
+    </div>
+</footer>
 
     <script src="./dist/js/script.min.js"></script>
 </body>
