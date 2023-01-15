@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/1c70c2797d.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./dist/css/">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
@@ -91,7 +91,7 @@
                     <p class="offers__title-describe">Wybierz jedną z naszych wspaniałych ofert!</p>
                 </div>
                 <div class="offers__boxes">
-                    <div class="offers__box">
+                    <div class="offers__box" data-aos="flip-left" data-aos-delay="100">
                         <p class="offers__box-title">Demo</p>
                         <p class="offers__box-price">$0</p>
                         <ul class="offers__box-lists-of-offers">
@@ -103,7 +103,7 @@
                         </ul>
                         <button class="offers__box-btn">Wybierz</button>
                     </div>
-                    <div class="offers__box offers__box--main">
+                    <div class="offers__box offers__box--main" data-aos="flip-left" data-aos-delay="300">
                         <p class="offers__box-title">Standard</p>
                         <p class="offers__box-price">$99</p>
                         <ul class="offers__box-lists-of-offers">
@@ -115,7 +115,7 @@
                         </ul>
                         <button class="offers__box-btn offers__box-btn--main">Wybierz</button>
                     </div>
-                    <div class="offers__box">
+                    <div class="offers__box" data-aos="flip-left" data-aos-delay="500">
                         <p class="offers__box-title">Premium</p>
                         <p class="offers__box-price">$299</p>
                         <ul class="offers__box-lists-of-offers">
@@ -167,6 +167,8 @@
     </div>
 </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dist/js/aossettings.min.js"></script>
     <script src="./dist/js/script.min.js"></script>
 </body>
 
