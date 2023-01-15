@@ -46,4 +46,12 @@
 			}
 		}
 	}
+
+	//CONTACT CARDS
+
+	.contact {
+		&__box--middle{
+			order: 1;
+		}
+	}
 }

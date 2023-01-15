@@ -189,7 +189,7 @@
 			padding-right: 5em;
 			margin-bottom: 5em;
 
-			&--right{
+			&--right {
 				flex-direction: row-reverse;
 				padding-right: 0;
 				padding-left: 5em;
@@ -209,7 +209,7 @@
 			transform: translateX(5em);
 			z-index: 10;
 
-			&--right{
+			&--right {
 				transform: translateX(-10em);
 				align-items: flex-end;
 				text-align: right;
@@ -245,6 +245,22 @@
 			width: 70%;
 			object-fit: cover;
 			transform: translateY(0em);
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	//CONTACT PAGE
+
+	.header {
+		&__img {
+			&--contact {
+				background-image: url('../../dist/img/header-contact-big.jpg');
+				background-position: 0 15%;
+			}
 		}
 	}
 }

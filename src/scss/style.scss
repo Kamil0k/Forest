@@ -277,6 +277,11 @@ nav {
 				font-weight: bold;
 				text-decoration: none;
 				color: $black;
+				transition: color 0.3s;
+			}
+
+			a:hover {
+				color: $main-color;
 			}
 		}
 	}
@@ -472,6 +477,10 @@ footer {
 		}
 	}
 
+	&__box {
+		overflow: hidden;
+	}
+
 	&__card {
 		position: relative;
 		padding: 1em;
@@ -484,8 +493,6 @@ footer {
 			margin-bottom: 0.5em;
 			font-size: 2.8rem;
 		}
-
-
 
 		&-link {
 			display: block;
@@ -518,12 +525,82 @@ footer {
 		width: 100%;
 		padding: 0 1em;
 		transform: translateY(-3em);
-		transition: transform 0.3s;
-		
+	}
+}
 
-		// &:hover {
-		// 	transform: scale(1.1);
-		// }
+//CONTACT PAGE
+
+//HEADER
+
+.header {
+	&__img {
+		&--contact {
+			background-image: url('../../dist/img/header-contact-small.jpg');
+		}
+	}
+}
+
+//CONTACT CARDS
+
+.contact {
+	margin-top: 4em;
+
+	&__boxes {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 290px;
+		margin-bottom: 3em;
+		text-align: center;
+		border: 1px solid $disabled;
+		border-radius: 5px;
+
+		&:nth-child(even) {
+			i {
+				color: $main-color;
+			}
+		}
+
+		&-link {
+			position: absolute;
+			top: 5%;
+			right: 2%;
+			a {
+				font-size: 1rem;
+				color: $darker;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+
+		&-icon {
+			position: absolute;
+			top: -20%;
+			padding: 0 0.5em;
+			font-size: 4rem;
+			background-color: $white;
+			color: $darker;
+		}
+
+		&-title {
+			font-size: 2.5rem;
+			margin: 1em;
+		}
+
+		&-info {
+			margin-bottom: 1em;
+			color: $darker
+		}
 	}
 }
 

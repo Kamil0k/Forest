@@ -27,17 +27,6 @@
 		}
 	}
 
-	//OFFERS
-
-	.offers {
-		&__boxes {
-
-			&-link {
-				font-size: 2rem;
-			}
-		}
-	}
-
 	//FOOTER
 
 	.footer {
@@ -73,6 +62,16 @@
 			}
 		}
 	}
+
+	//CONTACT PAGE
+
+	.header {
+		&__img {
+			&--contact {
+				background-position: 0 15%;
+			}
+		}
+	}
 }
 
 @media (min-width: 870px) {
@@ -96,6 +95,14 @@
 				order: 0;
 				margin-top: 0em;
 			}
+		}
+	}
+
+	//CONTACT CARDS
+
+	.contact {
+		&__box--middle {
+			order: 0;
 		}
 	}
 }
